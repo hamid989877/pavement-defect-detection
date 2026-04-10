@@ -98,7 +98,7 @@ Precision remains high across confidence levels, with **all classes achieving 1.
 
 ###  Recall – Confidence Curve
 
-![Recall-Confidence Curve](BoxR_curve.png)
+![Recall-Confidence Curve](detect/train/BoxR_curve.png)
 
 Recall drops as confidence increases—typical behaviour. The **all‑classes recall at confidence 0.000 is 0.86**, meaning 86% of all ground‑truth objects are detected at the lowest threshold.
 
