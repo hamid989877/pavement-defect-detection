@@ -47,7 +47,7 @@ These augmentations help the model become invariant to orientation, lighting var
 
 ---
 
-## 🏷 Class Labels
+##  Class Labels
 
 | Class ID | Class Name              | Description                                                                 |
 |:--------:|:------------------------|:----------------------------------------------------------------------------|
