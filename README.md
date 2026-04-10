@@ -1,6 +1,6 @@
-#  YOLO-Based Pavement Crack and Infrastructure Defect Detection
+#  YOLO Based Pavement Crack and Infrastructure Defect Detection
 
-This repository contains the training results, evaluation metrics, and model performance visualizations for a **YOLO object detection model** fine‑tuned to detect and classify **five types of pavement surface distresses**.
+This repository contains the training results, evaluation metrics, and model performance visualizations for a **YOLO object detection model** fine tuned to detect and classify **five types of pavement surface distresses**.
 
 
 ---
@@ -31,7 +31,7 @@ The training dataset was prepared using the following preprocessing pipeline and
 |------|-------------|
 | **Auto‑Orient** | Automatically corrects image orientation based on EXIF metadata. |
 | **Resize** | Images are stretched to **640×640** pixels (YOLO default input size). |
-| **Grayscale** | All images are converted to single‑channel grayscale. |
+| **Grayscale** | All images are converted to single channel grayscale. |
 
 ###  Augmentations
 *Applied during training with **3 augmented outputs per original example**.*
@@ -54,8 +54,8 @@ These augmentations help the model become invariant to orientation, lighting var
 |    0     | **Longitudinal Crack**  | Cracks running parallel to the pavement centreline.                          |
 |    1     | **Transverse Crack**    | Cracks running perpendicular to the pavement centreline.                     |
 |    2     | **Alligator Crack**     | Interconnected cracks forming a pattern similar to alligator skin.           |
-|    3     | **Infrastructure Defect** | Man‑made features like manhole covers, patches, or utility cuts.            |
-|    4     | **Pothole**             | Bowl‑shaped depressions in the pavement surface.                             |
+|    3     | **Infrastructure Defect** | Man made features like manhole covers, patches, or utility cuts.            |
+|    4     | **Pothole**             | Bowl shaped depressions in the pavement surface.                             |
 
 ---
 
@@ -100,13 +100,13 @@ Precision remains high across confidence levels, with **all classes achieving 1.
 
 ![Recall-Confidence Curve](detect/train/BoxR_curve.png)
 
-Recall drops as confidence increases—typical behaviour. The **all‑classes recall at confidence 0.000 is 0.86**, meaning 86% of all ground‑truth objects are detected at the lowest threshold.
+Recall drops as confidence increases—typical behaviour. The **all classes recall at confidence 0.000 is 0.86**, meaning 86% of all ground truth objects are detected at the lowest threshold.
 
 ###  Precision – Recall Curve
 
 ![Precision-Recall Curve](detect/train/BoxPR_curve.png)
 
-The **PR curves** show the trade‑off for each class. The area under these curves corresponds to the **Average Precision (AP)**. Class **3 (Infrastructure Defect)** exhibits the highest AP, while class **4 (Pothole)** is the most challenging.
+The **PR curves** show the trade off for each class. The area under these curves corresponds to the **Average Precision (AP)**. Class **3 (Infrastructure Defect)** exhibits the highest AP, while class **4 (Pothole)** is the most challenging.
 
 ---
 
