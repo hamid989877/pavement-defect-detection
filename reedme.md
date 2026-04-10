@@ -2,7 +2,6 @@
 
 This repository contains the training results, evaluation metrics, and model performance visualizations for a **YOLO object detection model** fine‑tuned to detect and classify **five types of pavement surface distresses**.
 
-![results overview](detect/train/results.png)
 
 ---
 
