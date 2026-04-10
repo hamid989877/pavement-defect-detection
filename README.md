@@ -143,11 +143,4 @@ The **PR curves** show the trade off for each class. The area under these curves
 | `confusion_matrix_normalized.png` | Confusion matrix normalised by true class (row‑wise).                        |
 | `labels.jpg`                      | Class label reference image.                                                 |
 
----
 
-##  How to Use the Trained Model
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/pavement-defect-detection.git
-   cd pavement-defect-detection
